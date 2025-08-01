@@ -212,4 +212,4 @@ For questions or support:
 
 ---
 
-**Developed with ❤️ by Parscoders Team** 
+ 
