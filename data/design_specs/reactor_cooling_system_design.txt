@@ -1,0 +1,48 @@
+Reactor Cooling System Design Specifications
+
+System Overview:
+The reactor cooling system is designed to maintain optimal operating temperature and prevent overheating during normal operation and emergency situations.
+
+Cooling Components:
+1. Primary Cooling Loop
+   - Closed-loop system using demineralized water
+   - Flow rate: 12,000 gallons per minute
+   - Operating pressure: 155 bar
+   - Inlet temperature: 290°C
+   - Outlet temperature: 325°C
+
+2. Secondary Cooling Loop
+   - Closed-loop system using treated water
+   - Flow rate: 15,000 gallons per minute
+   - Operating pressure: 65 bar
+
+3. Emergency Cooling System
+   - Passive safety injection system
+   - Capable of operating without external power for 96 hours
+   - Redundant pumping systems
+
+Materials and Specifications:
+- Primary cooling pipes: 316L stainless steel
+- Pipe wall thickness: 38 mm (calculated based on pressure and temperature)
+- Cooling system connections are insulated with standard industrial-grade thermal insulation
+- Average insulation thickness: 45mm
+- All cooling system components are designed to withstand seismic events up to 0.25g intensity
+
+Safety Features:
+- Automatic pressure relief valves
+- Real-time temperature monitoring at 24 points
+- Redundant flow sensors
+- Emergency core cooling system with backup power
+- Containment spray system consists of two independent pumps with separate power supplies
+
+Control Systems:
+- Digital control system with analog backup
+- Response time to pressure changes: 3 seconds
+- Triple redundant sensors for critical parameters
+- Fail-safe design philosophy
+
+Maintenance Requirements:
+- Monthly visual inspection
+- Quarterly flow testing
+- Annual pressure testing
+- Biennial full system inspection 

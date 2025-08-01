@@ -1,0 +1,43 @@
+Nuclear Safety Regulation for Cooling Systems
+
+Article 5.1: All primary cooling systems must be designed to maintain core temperatures below critical thresholds during normal and accident conditions.
+
+Article 5.2: All cooling system connections must have standard thermal insulation with a minimum thickness of 50 mm.
+
+Article 5.3: Primary cooling system pipes must be made of 300-series stainless steel or equivalent resistant alloys.
+
+Article 7.1: Seismic resistance with a minimum intensity of 0.35g is mandatory for all cooling system components.
+
+Article 7.2: All safety-critical systems must maintain functionality during and after design basis earthquakes.
+
+Article 8.1: All safety systems must have triple redundancy with independent power sources.
+
+Article 8.2: The nuclear facility must have at least two independent sources of off-site power.
+
+Article 8.3: Emergency diesel generators must have capacity to power all safety systems for at least 72 hours.
+
+Article 8.4: The emergency cooling system must be able to operate for at least 72 hours without an external power source in case of power failure.
+
+Article 9.1: Containment structures must be designed to withstand internal pressurization of at least 6 bar.
+
+Article 10.1: All systems must undergo regular testing and maintenance as per manufacturer specifications.
+
+Article 10.2: Safety-critical systems must be tested quarterly, with comprehensive testing annually.
+
+Article 10.3: At least three independent protective layers must exist to prevent radioactive material leakage under accident conditions.
+
+Article 12.1: All pressure vessels must have automatic relief mechanisms to prevent over-pressurization.
+
+Article 12.2: Pressure relief systems must activate within 5 seconds of threshold exceedance.
+
+Article 12.3: All pressure boundaries must be constructed of materials suitable for radiation environments.
+
+Article 12.4: The primary cooling system must be capable of natural circulation cooling in case of pump failure.
+
+Article 12.5: The low-pressure safety injection system must have at least two independent pumps with separate power sources.
+
+Article 15.1: The containment spray system must consist of at least three independent pumps.
+
+Article 15.2: Containment cooling systems must be capable of removing at least 1.5 times the maximum design heat load.
+
+Article 15.3: The wall thickness of the main pipes must be calculated according to pressure and temperature and must not be less than 40 mm. 
