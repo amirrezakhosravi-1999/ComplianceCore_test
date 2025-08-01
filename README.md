@@ -189,7 +189,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Parscoders Team** for development and research
 - **Nuclear Regulatory Agencies** for providing public documentation
 - **Hugging Face** for transformer models and tools
 - **Open Source Community** for various libraries and tools
