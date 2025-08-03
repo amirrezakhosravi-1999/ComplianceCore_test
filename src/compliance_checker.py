@@ -207,13 +207,8 @@ class ComplianceChecker:
             return self._rule_based_compliance_check(design_text, regulation_text)
         
         # مجبور کردن استفاده از rule-based برای تست
-<<<<<<< HEAD
         # logger.info("FORCING rule-based for testing purposes")
         # return self._rule_based_compliance_check(design_text, regulation_text)
-=======
-        logger.info("FORCING rule-based for testing purposes")
-        return self._rule_based_compliance_check(design_text, regulation_text)
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
         
         # Create prompt for compliance checking
         if self.fine_tuned_model_path:
@@ -324,13 +319,8 @@ Analysis:
             return self._rule_based_compliance_check(design_text, regulation_text)
         
         # برای حالت آزمایشی، همیشه از rule-based استفاده کن
-<<<<<<< HEAD
         # logger.info("Forcing rule-based check for testing")
         # return self._rule_based_compliance_check(design_text, regulation_text)
-=======
-        logger.info("Forcing rule-based check for testing")
-        return self._rule_based_compliance_check(design_text, regulation_text)
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
     
     def _rule_based_compliance_check(self, design_text: str, regulation_text: str) -> Dict[str, Any]:
         """

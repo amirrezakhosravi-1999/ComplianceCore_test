@@ -188,11 +188,7 @@ class ReportGenerator:
         
         # Extract data
         status_counts = compliance_data['summary']['status_counts']
-<<<<<<< HEAD
         compliance_score = compliance_data['summary']['compliance_percentage']
-=======
-        compliance_score = compliance_data['summary']['compliance_score']
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
         
         # Generate pie chart for status distribution
         fig1, ax1 = plt.subplots(figsize=(8, 6))
@@ -298,21 +294,13 @@ class ReportGenerator:
         template_data = {
             'report_title': 'Nuclear Regulatory Compliance Report',
             'generation_date': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-<<<<<<< HEAD
             'compliance_score': f"{compliance_data['summary']['compliance_percentage']:.1f}",
-=======
-            'compliance_score': f"{compliance_data['summary']['compliance_score'] * 100:.1f}",
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
             'total_checks': compliance_data['summary']['total_checks'],
             'status_counts': compliance_data['summary']['status_counts'],
             'issues': compliance_data['issues'],
             'detailed_results': compliance_data['detailed_results'],
             'current_year': datetime.now().year,
-<<<<<<< HEAD
             'score_color': self._get_score_color(compliance_data['summary']['compliance_percentage'])
-=======
-            'score_color': self._get_score_color(compliance_data['summary']['compliance_score'])
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
         }
         
         # Add chart paths
@@ -332,11 +320,7 @@ class ReportGenerator:
     
     def _get_score_color(self, score: float) -> str:
         """Get color based on compliance score."""
-<<<<<<< HEAD
         score_percent = score
-=======
-        score_percent = score * 100
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
         if score_percent >= 90:
             return "#4CAF50"  # Green
         elif score_percent >= 75:
@@ -579,15 +563,9 @@ _Generated on {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}_
 
 ## Compliance Summary
 
-<<<<<<< HEAD
 **Overall Compliance Score: {summary['compliance_percentage']:.1f}%**
 
 Total Regulatory Requirements Checked: {summary['total_requirements']}
-=======
-**Overall Compliance Score: {summary['compliance_score']}%**
-
-Total Regulatory Requirements Checked: {summary['total_checks']}
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
 
 ### Status Distribution:
 """
