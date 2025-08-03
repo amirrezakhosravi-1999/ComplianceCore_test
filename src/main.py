@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 
-# os.environ["TRANSFORMERS_OFFLINE"] = "1"
+ os.environ["TRANSFORMERS_OFFLINE"] = "1"
 # Import project modules
 try:
     from data_ingestion import DataIngestion
