@@ -14,10 +14,7 @@ import time
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 
-<<<<<<< HEAD
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
-=======
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
 # Import project modules
 try:
     from data_ingestion import DataIngestion
@@ -85,13 +82,8 @@ class CAELUSPipeline:
                 "compliance_reports": "output/reports"
             },
             "model_settings": {
-<<<<<<< HEAD
                 "base_model":"mistralai/Mistral-7B-Instruct-v0.2", #"gpt2"
-                "embedding_model":"mistralai/Mistral-7B-Instruct-v0.2",
-=======
-                "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
-                "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
->>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
+                "embedding_model":"sentence-transformers/all-MiniLM-L6-v2",
                 "fine_tuned_model": None
             },
             "pipeline_settings": {
