@@ -25,6 +25,26 @@ The Reactor Cooling System shall:
 - Provide sufficient flow to maintain DNBR > 1.3 under all anticipated operational occurrences
 - Support load following operations between 50% and 100% power at a rate of up to 5% per minute
 
+<<<<<<< HEAD
+=======
+2.2 Safety Requirements
+
+The Reactor Cooling System shall:
+- Maintain coolant pressure boundary integrity under all design basis accidents
+- Provide two physically separated flow paths for decay heat removal
+- Withstand seismic events up to 0.25g Peak Ground Acceleration without loss of function
+- Maintain fuel cladding temperature below 1200°C during design basis accidents
+- Provide sufficient margin against brittle fracture under all operating conditions
+- Include provisions for in-service inspection of pressure boundary components
+- Be capable of isolating any steam generator with a tube rupture
+- Contain radioactive materials with leakage not exceeding 3.8 liters per hour
+
+2.3 Design Parameters
+
+The Reactor Cooling System shall be designed with the following parameters:
+- Design pressure: 17.5 MPa
+- Design temperature: 350°C
+>>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
 - Operating pressure: 15.5 MPa
 - Core inlet temperature: 295°C
 - Core outlet temperature: 325°C
@@ -103,6 +123,10 @@ The RCS shall interface with the CVCS to:
 - Allow for pressurizer auxiliary spray during cool down
 
 4.2 Interface with Safety Injection System (SIS)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
 The RCS shall interface with the SIS to:
 - Provide multiple connection points for emergency core cooling
 - Allow rapid injection of borated water in case of reactivity accidents
@@ -198,6 +222,10 @@ The RCS shall be designed for the following operational modes:
 - Cold shutdown with temperature below 93°C
 
 8.2 Abnormal Operation
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
 The RCS shall accommodate the following abnormal conditions:
 - Loss of a single RCP without reactor trip up to 75% power
 - Partial loss of flow (one loop) with automatic reactor runback
@@ -233,6 +261,7 @@ The following documentation shall be maintained:
 SECTION 10: CONCLUSION
 --------------------
 
+<<<<<<< HEAD
 This design specification defines the minimum requirements for the Reactor Cooling System. All deviations must be documented and approved through the design change process. The design shall be subjected to independent verification and validation prior to implementation.
 
 2.2 Safety Requirements
@@ -252,3 +281,6 @@ The Reactor Cooling System shall:
 The Reactor Cooling System shall be designed with the following parameters:
 - Design pressure: 17.5 MPa
 - Design temperature: 350°C
+=======
+This design specification defines the minimum requirements for the Reactor Cooling System. All deviations must be documented and approved through the design change process. The design shall be subjected to independent verification and validation prior to implementation. 
+>>>>>>> 2f5b5099fbe38f98886d9fce0926969b4913a8af
