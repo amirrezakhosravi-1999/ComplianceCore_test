@@ -1,0 +1,254 @@
+REACTOR COOLING SYSTEM DESIGN SPECIFICATION
+===========================================
+
+Document ID: RCS-DESIGN-2023-001
+Version: 1.2
+Date: 2023-05-15
+Classification: Technical Design Document
+
+SECTION 1: OVERVIEW
+------------------
+
+The Reactor Cooling System (RCS) is designed to remove heat generated in the reactor core during normal operation and anticipated operational occurrences, and to transfer this heat to the secondary system. The RCS also provides a barrier against the release of radioactive materials into the secondary system and the environment.
+
+SECTION 2: SYSTEM DESIGN REQUIREMENTS
+------------------------------------
+
+2.1 Functional Requirements
+
+The Reactor Cooling System shall:
+- Remove heat from the reactor core at a rate of 3400 MWt under normal operating conditions
+- Maintain core outlet temperature below 330°C during steady-state operation
+- Provide natural circulation cooling capability of at least 5% of full power in case of loss of forced flow
+- Maintain pressure between 15.0 MPa and 15.5 MPa during normal operation
+- Accommodate thermal expansion of coolant during heat-up operations
+- Provide sufficient flow to maintain DNBR > 1.3 under all anticipated operational occurrences
+- Support load following operations between 50% and 100% power at a rate of up to 5% per minute
+
+- Operating pressure: 15.5 MPa
+- Core inlet temperature: 295°C
+- Core outlet temperature: 325°C
+- Total coolant flow rate: 16,800 kg/s
+- Number of loops: 4
+- Number of steam generators: 4
+- Pressurizer volume: 45 m³
+- Primary piping inner diameter: 750 mm
+- Material: Stainless steel type 316L and low alloy steel with stainless steel cladding
+- Design life: 60 years
+
+SECTION 3: COMPONENT SPECIFICATIONS
+----------------------------------
+
+3.1 Reactor Pressure Vessel
+
+The Reactor Pressure Vessel (RPV) shall:
+- Be fabricated from SA-508 Grade 3 Class 1 with stainless steel cladding
+- Have a nominal wall thickness of 250 mm at the beltline region
+- Include provisions for in-vessel flow mixing to prevent thermal stratification
+- Be designed for a neutron fluence of less than 5 × 10¹⁹ n/cm² (E > 1 MeV) at the vessel inner wall over the 60-year design life
+- Include a minimum of 8 nozzles for coolant loops with an inner diameter of 750 mm
+- Be equipped with at least 42 penetrations for control rod drive mechanisms
+- Have a removable closure head with double O-ring seals
+- Include flow restrictors in all outlet nozzles
+
+3.2 Reactor Coolant Pumps
+
+Each Reactor Coolant Pump (RCP) shall:
+- Be a vertical, single-stage centrifugal pump with a shaft seal assembly
+- Have a design flow rate of 4,200 kg/s
+- Develop a head of at least 85 meters of water at design flow
+- Be powered by a 7,000 kW, 6.6 kV AC, three-phase induction motor
+- Include a flywheel with sufficient inertia to provide coastdown flow for at least 10 seconds after loss of power
+- Be equipped with shaft seals designed for a leakage rate of less than 1.5 liters per hour during normal operation
+- Have vibration monitoring and shaft displacement sensors
+- Include anti-reverse rotation devices
+- Be designed for maintenance intervals of not less than 18 months
+
+3.3 Steam Generators
+
+Each Steam Generator (SG) shall:
+- Be a vertical U-tube type with integral moisture separation equipment
+- Have a heat transfer area of at least 5,500 m²
+- Contain a minimum of 5,500 tubes with an outer diameter of 19.05 mm and wall thickness of 1.09 mm
+- Be fabricated from Alloy 690 thermally treated tubes
+- Include flow distribution baffles to minimize tube vibration
+- Have a secondary side design pressure of 8.0 MPa
+- Include blowdown capacity of at least 1% of maximum steaming rate
+- Be equipped with tube support plates made of stainless steel with broached trefoil holes
+- Provide steam with moisture content not exceeding 0.25% by weight at full power
+- Include provisions for in-service inspection of tubes
+
+3.4 Pressurizer
+
+The Pressurizer shall:
+- Have a total volume of 45 m³ with a steam volume of approximately 20 m³ at normal operating conditions
+- Be equipped with electric heaters with a total capacity of 1800 kW
+- Include at least three banks of spray nozzles with a total capacity of 400 liters per minute
+- Be equipped with at least three safety valves with a combined capacity to prevent system pressure from exceeding 110% of design pressure
+- Include power-operated relief valves for pressure control during transients
+- Be fabricated from low alloy steel with stainless steel cladding
+- Include a surge line sized to accommodate insurge/outsurge flows during load changes
+- Have a water level measurement system with at least three independent channels
+
+SECTION 4: SYSTEM INTERFACES
+---------------------------
+
+4.1 Interface with Chemical and Volume Control System (CVCS)
+
+The RCS shall interface with the CVCS to:
+- Maintain water inventory in the RCS
+- Provide means for chemical addition to control water chemistry
+- Support purification of reactor coolant
+- Provide seal water injection to the reactor coolant pumps
+- Allow for pressurizer auxiliary spray during cool down
+
+4.2 Interface with Safety Injection System (SIS)
+The RCS shall interface with the SIS to:
+- Provide multiple connection points for emergency core cooling
+- Allow rapid injection of borated water in case of reactivity accidents
+- Support long-term cooling after loss of coolant accidents
+- Enable residual heat removal during shutdown conditions
+
+4.3 Interface with Secondary System
+
+The RCS shall interface with the Secondary System to:
+- Transfer heat from the primary to secondary system through steam generators
+- Support load following operations
+- Provide isolation capabilities in case of steam generator tube rupture
+- Include provisions for steam generator blowdown for chemistry control
+
+SECTION 5: INSTRUMENTATION AND CONTROL
+------------------------------------
+
+5.1 Instrumentation Requirements
+
+The RCS shall be equipped with instrumentation to monitor:
+- Coolant temperature at reactor inlet and outlet (minimum 4 channels each)
+- System pressure (minimum 3 channels)
+- Pressurizer level (minimum 3 channels)
+- Coolant flow in each loop (minimum 2 channels per loop)
+- RCP operational parameters including speed, vibration, bearing temperatures
+- Leakage detection with sensitivity better than 3.8 liters per hour
+- Loose parts monitoring system
+- Reactor vessel level indication during reduced inventory operations
+- Subcooling margin monitors (minimum 2 channels)
+
+5.2 Control Requirements
+
+The RCS shall include control systems for:
+- Pressurizer pressure control using heaters, spray valves, and relief valves
+- Pressurizer level control using charging and letdown flow adjustment
+- Steam generator level control to maintain inventory
+- Reactor coolant pump control including anti-motoring protection
+
+SECTION 6: TESTING AND MAINTENANCE
+---------------------------------
+
+6.1 Pre-operational Testing
+
+The RCS shall undergo comprehensive testing including:
+- Hydrostatic testing at 1.25 times design pressure
+- Hot functional testing prior to fuel loading
+- Flow coastdown testing for RCPs
+- Chemical cleaning and flushing
+- Performance verification of all instrumentation and control systems
+- Verification of natural circulation capability
+
+6.2 In-service Inspection Requirements
+
+The RCS shall be designed to allow for:
+- Volumetric inspection of all pressure boundary welds
+- Visual inspection of internal components during refueling
+- Ultrasonic testing of the reactor vessel beltline region
+- Eddy current testing of steam generator tubes
+- Periodic verification of pressurizer safety valve setpoints
+
+SECTION 7: MATERIALS AND CHEMISTRY
+---------------------------------
+
+7.1 Material Requirements
+
+Materials used in the RCS shall:
+- Be selected to minimize activation and corrosion
+- Have documented resistance to stress corrosion cracking
+- Meet ASME Boiler and Pressure Vessel Code Section III requirements
+- Have appropriate fracture toughness at the lowest expected temperature
+- Have thermal expansion properties compatible with connected components
+
+7.2 Chemistry Control
+
+The RCS chemistry shall be maintained with:
+- pH between 6.9 and 7.4 at operating temperature
+- Dissolved oxygen below 5 ppb during power operation
+- Chloride and fluoride concentrations below 0.15 ppm
+- Suspended solids below 1.0 ppm
+- Hydrogen concentration between 25-50 cc/kg to suppress radiolysis
+
+SECTION 8: SYSTEM OPERATION
+-------------------------
+
+8.1 Normal Operation
+
+The RCS shall be designed for the following operational modes:
+- Heat-up at a maximum rate of 55°C per hour
+- Cool-down at a maximum rate of 55°C per hour
+- Load following between 50% and 100% power at up to 5% per minute
+- Hot standby conditions with temperature at 290°C
+- Hot shutdown with temperature between 175°C and 290°C
+- Cold shutdown with temperature below 93°C
+
+8.2 Abnormal Operation
+The RCS shall accommodate the following abnormal conditions:
+- Loss of a single RCP without reactor trip up to 75% power
+- Partial loss of flow (one loop) with automatic reactor runback
+- Loss of load without reactor trip up to 50% power
+- Feed and bleed operations for decay heat removal
+- Operation with reduced inventory during refueling operations
+- Mid-loop operations with reliable level indication
+- Station blackout for up to 8 hours using natural circulation cooling
+
+SECTION 9: QUALITY ASSURANCE
+--------------------------
+
+9.1 Quality Classification
+
+All components of the Reactor Coolant Pressure Boundary shall be:
+- Classified as Safety Class 1
+- Designed, fabricated, and tested in accordance with ASME Section III, Class 1 requirements
+- Subject to strict quality assurance requirements per 10 CFR 50 Appendix B
+- Manufactured with certified materials with full traceability
+- Inspected and tested by qualified personnel using calibrated equipment
+
+9.2 Documentation
+
+The following documentation shall be maintained:
+- Design calculations and analyses
+- Material certifications
+- Manufacturing process records
+- Inspection and test reports
+- As-built drawings
+- Equipment qualification documentation
+- Pressure boundary component design reports per ASME Section III
+
+SECTION 10: CONCLUSION
+--------------------
+
+This design specification defines the minimum requirements for the Reactor Cooling System. All deviations must be documented and approved through the design change process. The design shall be subjected to independent verification and validation prior to implementation.
+
+2.2 Safety Requirements
+
+The Reactor Cooling System shall:
+- Maintain coolant pressure boundary integrity under all design basis accidents
+- Provide two physically separated flow paths for decay heat removal
+- Withstand seismic events up to 0.25g Peak Ground Acceleration without loss of function
+- Maintain fuel cladding temperature below 1200°C during design basis accidents
+- Provide sufficient margin against brittle fracture under all operating conditions
+- Include provisions for in-service inspection of pressure boundary components
+- Be capable of isolating any steam generator with a tube rupture
+- Contain radioactive materials with leakage not exceeding 3.8 liters per hour
+
+2.3 Design Parameters
+
+The Reactor Cooling System shall be designed with the following parameters:
+- Design pressure: 17.5 MPa
+- Design temperature: 350°C

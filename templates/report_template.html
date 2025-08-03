@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAELUS Compliance Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        .header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+        }
+        .summary {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .compliance-item {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .compliance-header {
+            padding: 1.5rem;
+            border-left: 5px solid #007bff;
+        }
+        .compliance-header.compliant {
+            border-left-color: #28a745;
+            background-color: #f8fff9;
+        }
+        .compliance-header.non-compliant {
+            border-left-color: #dc3545;
+            background-color: #fff5f5;
+        }
+        .compliance-header.partial {
+            border-left-color: #ffc107;
+            background-color: #fffbf0;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .status-compliant {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-non-compliant {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .status-partial {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .compliance-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+        .regulation-text {
+            background-color: #f8f9fa;
+            border-left: 3px solid #6c757d;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        .design-text {
+            background-color: #e7f3ff;
+            border-left: 3px solid #007bff;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .reasoning {
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            border-top: 1px solid #dee2e6;
+            margin-top: 3rem;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .stat-label {
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CAELUS Compliance Report</h1>
+        <p>Compliance Assessment Engine Leveraging Unified Semantics</p>
+        <p>Generated on: {{ report_date }}</p>
+    </div>
+
+    <div class="summary">
+        <h2>Executive Summary</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">{{ total_items }}</div>
+                <div class="stat-label">Total Items Checked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #28a745;">{{ compliant_count }}</div>
+                <div class="stat-label">Compliant</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #ffc107;">{{ partial_count }}</div>
+                <div class="stat-label">Partially Compliant</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" style="color: #dc3545;">{{ non_compliant_count }}</div>
+                <div class="stat-label">Non-Compliant</div>
+            </div>
+        </div>
+        
+        <p><strong>Design Document:</strong> {{ design_file }}</p>
+        <p><strong>Overall Compliance Rate:</strong> {{ compliance_percentage }}%</p>
+    </div>
+
+    <h2>Detailed Compliance Analysis</h2>
+    
+    {% for item in compliance_items %}
+    <div class="compliance-item">
+        <div class="compliance-header {{ item.status_class }}">
+            <h3>{{ item.title }} 
+                <span class="status-badge status-{{ item.status_class }}">{{ item.status }}</span>
+            </h3>
+        </div>
+        <div class="compliance-content">
+            <h4>Design Specification:</h4>
+            <div class="design-text">{{ item.design_text }}</div>
+            
+            <h4>Regulatory Requirement:</h4>
+            <div class="regulation-text">{{ item.regulation_text }}</div>
+            
+            <h4>Analysis:</h4>
+            <div class="reasoning">{{ item.reasoning }}</div>
+            
+            {% if item.recommendations %}
+            <h4>Recommendations:</h4>
+            <ul>
+                {% for rec in item.recommendations %}
+                <li>{{ rec }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="footer">
+        <p>Report generated by CAELUS - Compliance Assessment Engine Leveraging Unified Semantics</p>
+        <p>Developed by Parscoders Team</p>
+    </div>
+</body>
+</html> 
